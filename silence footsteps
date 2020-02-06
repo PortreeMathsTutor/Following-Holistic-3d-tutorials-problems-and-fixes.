@@ -1,0 +1,7 @@
+If you want to scilence the footstep noise from the free FPS prefab
+insert the code PlayFootsteps()
+
+   theVariableForAudioSource.volume = 0f;
+   
+   
+   
