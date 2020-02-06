@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class StickyBomb : MonoBehaviour
+{
+    public GameObject explosionPrefab;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        this.GetComponent<Rigidbody>().isKinematic = true;
+        Invoke("Explode",0.2f);
+    }
+
+    void Explode()
+    {
+        Instantiate(explosionPrefab, this.transform.position, this.transform.rotation);
+        Destroy(this.gameObject);
+    }
+}
