@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TransformForward : MonoBehaviour
+{
+// In following part 9 I used the character contoller Full Body FPS Controller
+// this character falls through the ground up to his middle.
+// I moved the char_ethan which was in the Character Mesh up to position (0,1,0)
+// the character just hangs there but the controls work.
+// I put an empty gameObject on the Camera Contoller at position (0,-0.7,0)
+// That was great because the empty game object follows the rotation of the actual camera
+// and the Camera Controller transform doesn't.
+
+// So the empty gameObject was attached to the Camera Controller which was attached to the FPS Controller
+// and it was the empty gameObject to which I attached the script.
+
+
+    public GameObject bulletPrefab;                      //This is wher the sphere goes.
+    public GameObject theCamera;                         //This is where the empty gameObject goes.
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject nb = (GameObject)Instantiate(bulletPrefab, this.transform.position, theCamera.transform.rotation);
+            nb.GetComponent<Rigidbody>().AddForce(this.transform.forward*1000);
+        }
+    }
+}
