@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TurnOffLight : MonoBehaviour
+{
+//I couldn't get SetActive to work
+// so I used GetComponent<Light>().enabled instead.
+
+    public GameObject theLight;
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+            theLight.GetComponent<Light>().enabled = !theLight.GetComponent<Light>().enabled;
+    }
+}
