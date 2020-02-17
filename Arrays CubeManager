@@ -5,14 +5,16 @@ using UnityEngine;
 public class CubesManager : MonoBehaviour
 {
     public GameObject[] ourCubes;
-    Color[] colours = new Color[20];
-    int[] height = new int[20];
+    Color[] colours;
+    int[] height ;
 
     int[] width = new int[10];
 
     // Start is called before the first frame update
     void Start()
     {
+        height = new int[ourCubes.Length];
+        colours = new Color[ourCubes.Length];
         for (int i=0; i< height.Length; i++) { height[i] = Random.Range(1, 10); }
 
         for (int i = 0; i < colours.Length; i++) { colours[i] = new Color(Random.Range(0f,1f), Random.Range(0f, 1f), Random.Range(0f, 1f)); }
@@ -27,3 +29,4 @@ public class CubesManager : MonoBehaviour
 
  
 }
+
