@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Scrolling : MonoBehaviour
+{
+    private Vector2 uvSpeed = new Vector2(0.0f, -0.30f);
+    private Vector2 uvOffset = Vector2.zero;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void LateUpdate()
+    {
+        uvOffset += ( uvSpeed * Time.deltaTime);
+        this.GetComponent<Renderer>().materials[0].
+            SetTextureOffset("_MainTex", uvOffset);
+    }
+}
