@@ -12,4 +12,6 @@ control z wont always work
 you might get this message
 Failed to create Object Undo, because the action is too large. Clearing undo buffer
 UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
-I imported a water plane from the asset store. It was called MobileDepthWater and it is a bit unrealistic.
+Stylized water textures worked.
+make a plane put water material on it.
+I imported a water plane from the asset store. It was called MobileDepthWater and it crashes.
