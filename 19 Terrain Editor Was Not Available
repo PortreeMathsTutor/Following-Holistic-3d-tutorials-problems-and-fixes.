@@ -15,3 +15,4 @@ UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
 Stylized water textures worked.
 make a plane put water material on it.
 I imported a water plane from the asset store. It was called MobileDepthWater and it crashes.
+I imported VRWaterShader it seams to work very well.
