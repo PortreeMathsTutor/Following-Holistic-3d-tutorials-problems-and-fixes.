@@ -7,3 +7,8 @@ I tried Mesh Terrain Editor Free but it wouldn't work with Unity 5.
 There are all sorts of little changes: to raise and lower click brush and the bar below it.
 To eddit texture choose open rather than eddit. And so on
 Watching the videos gives me hints rather than instructions.
+Saving the scene doesn't prevent the terrain from getting ruined so be very careful and make multiple copies of your game
+control z wont always work
+you might get this message
+Failed to create Object Undo, because the action is too large. Clearing undo buffer
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
