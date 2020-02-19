@@ -1,6 +1,6 @@
 First I imported Clouds Toy into my project
 this was a mistake. I deleated it and reimported it several times leaving out various things but it was no good.
-I created a new project and imported Clouds Toy just as it it is.
+I created a new project and imported Clouds Toy just as it is.
 The only error that came up was "creat a layer called "CloudsToy". so I did and put the clouds Toy assets in this layer .
 After that it worked. 
 Then I copied and pasted the folder and meta from the one asset folder into the other.
